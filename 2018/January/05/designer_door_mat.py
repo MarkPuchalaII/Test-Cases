@@ -33,3 +33,5 @@ for i in xrange(1, N, 2):
 print str('WELCOME').center(M, '-')       # I didn't realize str.center() works this way
 for i in xrange(N-2, -1, -2): 
     print ( str('.|.')*i ).center(M, '-')
+    
+    # This was the file I used to experiment with how to make the GitHub commits say what I want them to.
