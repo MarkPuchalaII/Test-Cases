@@ -1,18 +1,18 @@
-# Used someone else's code, again.
-# Today was a terrible day... My car is a total loss.
-# I don't want to file bankruptcy...
+# Figured this one out quite easily after review.
+# My main issue was that I didn't figure out the trick to this game.
+# So I overcomplicated things, trying to solve uneccessary puzzles.
 
-def minion_game(s):
-  vowels = 'AEIOU'
-
-  kevsc, stusc = 0, 0
-  for i in range(len(s)):
-      if s[i] in vowels: kevsc += (len(s)-i)
-      else: stusc += (len(s)-i)
-
-  if kevsc > stusc: print("Kevin", kevsc)
-  elif kevsc < stusc: print("Stuart", stusc)
-  else: print("Draw")
+def minion_game(w):
+    v = 'AEIOU'
+    k, s = 0, 0
+    
+    for i in range(len(w)):
+        if w[i] in v : k += len(w)-i # Checkout how elegant my version was this time.
+        else         : s += len(w)-i # I'm proud of this one, now. ;)    
+    
+    if   k > s : print('Kevin ' , k)
+    elif s > k : print('Stuart ', s)
+    else       : print('Draw')
 
 if __name__ == '__main__':
     s = input()
@@ -21,8 +21,8 @@ if __name__ == '__main__':
 ################################################################################
 
     # Hackerrank's approach
-S = raw_input().strip()      # I'm too exhausted from today.
-S_length = len(S)            # I will review this later...
+S = raw_input().strip()   
+S_length = len(S)       
 player1, player2 = 0,0
 
 for i in xrange(S_length):
