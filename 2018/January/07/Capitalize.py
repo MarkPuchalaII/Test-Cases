@@ -1,11 +1,11 @@
-# I took this from someone else's code
-# I found it in the discussion section for this problem
+# Revisiting this one, I found it quite easy.
+# My version ended up the same as Hackerrank's approach.
+# And I understand every part.
+# I think I understand these post for-loops a bit more, too.
 
-def capitalize(string):
-  for x in string[:].split():
-    string = string.replace(x, x.capitalize()) 
-  return string
-    
+def capitalize(s):
+  return ' '.join(w.capitalize() for w in s.split(' '))
+  
 if __name__ == '__main__':
     string = input()
     capitalized_string = capitalize(string)
@@ -16,9 +16,4 @@ if __name__ == '__main__':
     # Hackerrank's approach
 
     print(' '.join(word.capitalize() for word in input().split(' ')))
-    # Of course their version works better.
-    # Of course I'm having trouble understanding it.
-
-    # Today was a bad day for my mental health...
-    # I'm not sure I should even be coding right now...
-    # LET'S GO PLAY SOME AGE OF EMPIRES!
+    #Check out how similar our versions were! <3
