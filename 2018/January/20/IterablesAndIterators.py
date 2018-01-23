@@ -1,4 +1,5 @@
 # This challenge's lesson: Use other peopes' code to finish the job quick!
+# This is now outdated. The new version is in Test-Cases/2018/January/22
 
     # My spaghetti code version
 from itertools import combinations
